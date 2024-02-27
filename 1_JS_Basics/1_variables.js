@@ -38,7 +38,7 @@
 // A primitive type is piece of data that is not an object and has no methods. 
 
 // Strings (i.e., text) is an example of a primitive type.
-primitive = 'I am so primitive.';
+primitive = 'I am so primitive.'; 
 
 // You can check the value of the variable named primitive with console.log().
 console.log(primitive);
@@ -78,8 +78,8 @@ console.log('The value of the variable primitive is: ' + primitive);
 // All your efforts would be in vain. So what's the Catch 22? No need to 
 // change them, simply _replace_ them.
 
-primitive = 'I am so primitive.';
-console.log(primitive);
+let _replace_ = 'I am no longer primitive. I am making progress';
+console.log(_replace_);
 
 // Assign the new string 'I am no longer primitive. I am making progress!'
 // to primitive and print it to console.
@@ -138,12 +138,14 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 
 
 // Strings
-
+morpho = "Hallo"
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Characters
+
+morpho = 'Aze';
 
 // A one-type character string is also a string. Other languages have
 // the type 'char' for this special case, but not JS.
@@ -154,24 +156,24 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 // Booleans.
 
 // False.
-
+morpho = false;
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // True.
-
+morpho = true;
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Not much to say about booleans, they are kind of booring. But useful.
 
 // Undefined.
-
+morpho = undefined;
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Null
-
+morpho = null;
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);
 
@@ -189,7 +191,7 @@ console.log('The type of Morpho is now: ' + typeof morpho);
 
 // Symbols are variables that guaranteed to be unique. You probably won't 
 // use them a lot.
-
+morpho = Symbol;
 
 console.log('Morpho: ' + morpho);
 console.log('The type of Morpho is now: ' + typeof morpho);

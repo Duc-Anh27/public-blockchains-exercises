@@ -2,6 +2,8 @@
 // Exercise Sheet 2: Numbers. //
 ////////////////////////////////
 
+const { randomBytes } = require("crypto");
+
 // EXERCISE 1. Computations.
 ////////////////////////////
 
@@ -13,19 +15,19 @@
 // great I don't need to update the exercise!
 
 // a. Compute (18 + 107) / (5 * 25)
-
+a = (18 + 107) / (5 * 25);
 console.log(a);
 
 // b. Compute the square root of one million.
-
+b = Math.sqrt(1000000);
 console.log(b);
 
 // c. Take the remainder of the division betwen 123 and 9 squared, minus 1.
-
+c = (123 % Math.pow(9,2)) -1;
 console.log(c);
 
 // d. Take the integer part of the float number 2.123456789 (need to use Math).
-
+d = Math.floor(2.123456789);
 console.log(d);
 
 // Now compute:
@@ -35,7 +37,8 @@ console.log(a*b*c*d);
 ///////////////////////////////
 
 // Assign the value of the previous computation to variable with a proper name.
-
+multiplyAll = a*b*c*d;
+console.log(multiplyAll);
 // Long Hint. It is really important to name variables with meaningful names.
 // I mean, not meaningful for you, such as the name of your best friend
 // or of your dog, but meaningful with respect to the context of
@@ -62,10 +65,13 @@ console.log(luzernPopulation);
 // a. Generate a random number between 0 and 1, and store its value
 // in a variable (and pick a proper name for the variable!).
 // Hint. The Math object is your friend.
+randomNumb = Math.random();
+console.log(randomNumb);
 
 
 // b. Generate a random number between 0 and 10.
-
+randomBetweenten = Math.floor(Math.random()*10);
+console.log(randomBetweenten);
 
 
 //////////////////////////////

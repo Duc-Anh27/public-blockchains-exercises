@@ -39,6 +39,18 @@
 // Luzern print "Go Luzern!", if exactly equal print "Are we in the Matrix?",
 // otherwise print "Few but good!"
 
+rand = Math.random()*100000;
+luzernPopulation = 82000;
+if(rand >= luzernPopulation) {
+ console.log("Go Luzern!")
+}
+else if(rand === luzernPopulation){
+    console.log("Are we in the Matrix?")
+}
+else{
+    console.log("Few but good")
+}
+
 // Hint: variables do not transfer magically across files, that is why you
 // need to create a new variable with the population of Luzern here.
 // Hint2: Use console.log() to print.
@@ -51,13 +63,18 @@
 
 // The following code isn't working. Why?
 if (2 > 1) {
-    let deepThought = 'Everything is obvious once you know the answer.'    
+    var deepThought = 'Everything is obvious once you know the answer.'    
 }
 console.log(deepThought);
 
 // a. Fix it using it var instead of let.
 
 // b. Fix it using let.
+let deepThought2 = "";
+if (2 > 1) {
+    deepThought2 = 'Everything is obvious once you know the answer.'    
+}
+console.log(deepThought2);
 
 
 // EXERCISE 3. Loose vs Strict Comparisons.
@@ -91,6 +108,14 @@ else console.log('False');
 // Make justice to sameness by replacing the loose comparisons above, with 
 // strict comparisons (===).
 
+if (1 === '1') console.log('True');
+else console.log('False');
+
+if (0 === false) console.log('True');
+else console.log('False');
+
+if (0 === []) console.log('True');
+else console.log('False');
 
 // For more details, see:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness

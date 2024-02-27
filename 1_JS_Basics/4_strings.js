@@ -2,6 +2,8 @@
 // Exercise Sheet 4: Strings. //
 ////////////////////////////////
 
+const { join } = require("path");
+
 // EXERCISE 1. There are Quotes and Quotes.
 ///////////////////////////////////////////
 
@@ -14,6 +16,8 @@ str2 = 'He said "Goodbye" and left.';
 // One string is wrapped in double quotes and the other in single quotes. 
 // What is the difference? Can you swap the content and the type of quotes?
 // Hint: characters can be escaped by placing a backslah before them (\).
+str3 = 'Please don\'t do it';
+str4 = "He said \"Goodbye\" and left";
 
 // EXERCISE 2. Join and Count.
 //////////////////////////////
@@ -25,12 +29,15 @@ str2 = 'Just like everyone else.';
 
 // a. Join together these two strings and assign the result to a new variable
 // named finalStr.
+finalStr = str1 + " " + str2;
+finalStr2 = join(str1, str2);
+console.log(finalStr2);
 
 
 // b. Did you remember to add a space between them?
 // If so, how many characters is the final string?
 // Hint: Use the length property.
-
+console.log(finalStr.length);
 
 // EXERCISE 3. Joining Different Types.
 ///////////////////////////////////////
@@ -38,6 +45,9 @@ str2 = 'Just like everyone else.';
 str1 = "Always remember that you are absolutely unique.";
 str2 = 'Just like everyone else.';
 luzernPopulation = 82000;
+
+str2 = 'Just like other ' + luzernPopulation + ' persons in Luzern.';
+console.log(str2);
 
 // Did you know that you can also join strings and numbers together?
 // Replace str2 with a new sentence that includes the total population count
@@ -55,7 +65,11 @@ luzernPopulation = 82000;
 // the format `${myvariable}`.
 
 // Repeast exercise 3 using backticks.
+luzernPopulation = 82000;
+str1 = "Always remember that you are absolutely unique.";
 
+ finalStr = `${str1} Just like ${luzernPopulation} persons in Luzern.`;
+console.log(finalStr);
 
 // EXERCISE 5. Such a String Manipulator.
 /////////////////////////////////////////
@@ -67,15 +81,18 @@ luzernPopulation = 82000;
 // a. From the variable finalStr, extract a substring which contains only
 // the first part (i.e., the  initial content of str1).
 // Hint: Use the .substring() method and the length property.
-
+smallerStr = finalStr.substring(0, str1.length);
+console.log(smallerStr);
 
 // f. Now shout it loud and make the it upper case.
 // Hint: Use the method .toUpperCase().
-
+upperCase = smallerStr.toUpperCase();
 
 // g. Let's be honest. An upper case sentence must end with an exclamation mark.
 // Replace the dot at the end of the sentence with an exclamation mark.
+upperCase = upperCase.replace(".", "!");
 
+console.log(upperCase);
 
 // EXERCISE 6. Operators: const, var, let.
 //////////////////////////////////////////
